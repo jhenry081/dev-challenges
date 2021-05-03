@@ -1,0 +1,150 @@
+/* SITE COLORS
+Jet - #333333
+Davys Grey - #4F4F4F
+White - #FFFFFF
+Orange Yellow Crayola - #FFD25B
+Purple Navy - #60588E
+Rythym - #847DAA
+Bittersweet - #FF6D5B
+Space Cadet - #2B254E
+*/
+
+/*
+level 27:60% / 200px
+level 28: 1fr 50px / 1fr 4fr
+
+*/
+
+/* Desktop */
+/*
+logo size - 24px
+img size - w:540px, h:440px
+1st p: 64px
+2nd p: 24px
+button: w:216px, h:68px
+words in b: 14px
+footer: 14px
+*/
+
+/* Mobile */
+/*
+logo size - 24px
+img size - w:286px, h:238px
+1st p: 48px
+2nd p: 18px
+button: w:216px, h:68px
+words in b: 14px
+footer: 14px
+*/
+@font-face {
+  font-family: "Inconsolata";
+  src: url("/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/Space_Mono/SpaceMono-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  color: #333333;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  grid-column: 1 / span 12;
+  font-size: 24px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+}
+
+.image {
+  grid-column: 1 / span 6;
+}
+
+.image img {
+  max-width: 80%;
+  height: auto;
+}
+
+.content {
+  grid-column: 7 / span 6;
+}
+
+.content > * {
+  margin: 5px;
+}
+
+.footer {
+  grid-column: 1 / span 13;
+}
+
+p.main {
+  font-size: 64px;
+  max-width: 600px;
+  font-weight: 700;
+}
+
+.align-center {
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  max-width: 400px;
+}
+
+.btn {
+  background-color: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  width: 216px;
+  height: 68px;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper > * {
+    grid-column: col-start / span 12;
+    width: 100vw;
+    padding: 20px;
+  }
+
+  p.main {
+    font-size: 48px;
+    max-width: 700px;
+  }
+
+  p.sub-main {
+    font-size: 18px;
+  }
+}
