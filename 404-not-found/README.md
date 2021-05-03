@@ -67,6 +67,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [your-website.com](https://jhenry081.github.io/)
-- GitHub [@your-username](https://{github.com/jhenry081})
-- Twitter [@your-twitter](https://{twitter.com/IAmJoanHenry})
+- Website [jhenry081.github.io](https://jhenry081.github.io/)
+- GitHub [@jhenry081](https://{github.com/jhenry081})
+- Twitter [@IAmJoanHenry](https://{twitter.com/IAmJoanHenry})
